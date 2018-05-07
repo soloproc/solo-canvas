@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #06243d;
+    font-family: 'Limelight', cursive;
+}
+
+canvas {
+    position: absolute;
+    z-index: 1;
+}
+
+.control {
+    position: relative;
+    display: inline-block;
+    background: rgba(6, 36, 61, .6);
+    border-right: solid 1px rgba(255, 255, 255, .1);
+    z-index: 2;
+    overflow-x: scroll;
+}
+
+.box {
+    position: relative;
+    padding: 10px 20px;
+    z-index: 2;
+    cursor: ew-resize;
+    width: 180px;
+}
+
+.box>div {
+    position: relative;
+}
+
+input[type="text"] {
+    position: relative;
+    width: 180px;
+    font-size: 28px;
+    line-height: 1.5em;
+    box-shadow: none;
+    border: none;
+    border-bottom: 1px solid #aaa;
+    background: none;
+    text-align: center;
+    color: #fff;
+    font-family: 'Limelight', cursive;
+}
+
+p {
+    top: 0;
+    color: #fff;
+    opacity: .4;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.knob {
+    width: 5px;
+    height: 20px;
+    background: #fff;
+    position: absolute;
+    top: -10px;
+    z-index: 3;
+}
+
+.bar {
+    margin: 20px 0;
+    width: 180px;
+    height: 1px;
+    background: #fff;
+}
